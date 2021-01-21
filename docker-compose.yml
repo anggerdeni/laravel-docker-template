@@ -10,7 +10,7 @@ services:
     image: your_image_name
     container_name: app_container_name
     restart: unless-stopped
-    working_dir: /var/www/
+    working_dir: /var/www/src
     volumes:
       - ./:/var/www
     networks:

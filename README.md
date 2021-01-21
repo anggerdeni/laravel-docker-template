@@ -9,7 +9,7 @@ A shitty way to run laravel app in docker container. Maybe not the best solution
 5. Run `docker-compose up -d`
 6. After it finish, execute
     1. Get into the app container: `docker exec -it <whatever you name your app container> bash`
-    2. Go to src directory: `cd /var/www/src`
+    2. Make sure you are in src directory: `cd /var/www/src`
     3. Install dependency: `composer install`
     4. Generate application key: `php artisan key:generate`
     5. `exit`
