@@ -28,7 +28,7 @@ services:
       SERVICE_NAME: mysql
     volumes:
       - dbdata:/var/lib/mysql
-      - ./docker-compose/mysql:/docker-entrypoint-initdb.d
+      - ./docker-stuff/mysql:/docker-entrypoint-initdb.d
     networks:
       - your_network
   nginx:
@@ -39,7 +39,7 @@ services:
       - 50003:80
     volumes:
       - ./:/var/www
-      - ./docker-compose/nginx:/etc/nginx/conf.d
+      - ./docker-stuff/nginx:/etc/nginx/conf.d
     networks:
       - your_network
   pma:
